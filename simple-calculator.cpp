@@ -9,7 +9,7 @@ int main() {
   cout << "What do you want to do : ";
   cin >> x;
 
-  float a, b, res;
+  float a, b, res = 0;
 
   if (x == 1) {
     cout << "\n=== ADDITION ===\n First number : ";
@@ -34,6 +34,14 @@ int main() {
     cin >> b;
 
     res = a * b;
+
+  } else if (x == 4) {
+    cout << "\n=== DIVISION ===\n First number : ";
+    cin >> a;
+    cout << " Second number : ";
+    cin >> b;
+
+    res = a / b;
 
   } else {
     cout << "\noops currently we didn't have that option :((\n ";
