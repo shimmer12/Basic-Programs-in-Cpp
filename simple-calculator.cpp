@@ -5,7 +5,7 @@ int main() {
   int x;
 
   cout << "Operator Option : \n 1) Addition \n 2) Substraction \n 3) "
-          "Multiplication \n 4) Division \n";
+          "Multiplication \n 4) Division \n 5) Power \n";
   cout << "What do you want to do : ";
   cin >> x;
 
@@ -42,6 +42,14 @@ int main() {
     cin >> b;
 
     res = a / b;
+
+  } else if (x == 5) {
+    cout << "\n=== POWER ===\n First number : ";
+    cin >> a;
+    cout << " Second number : ";
+    cin >> b;
+
+    res = pow(a,b);
 
   } else {
     cout << "\noops currently we didn't have that option :((\n ";
